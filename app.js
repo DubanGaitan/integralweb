@@ -22,7 +22,7 @@ app.post('/integrar', (req, res) => {
   console.log(math.eval('9 / 3 + 2i'));
   
   let pagina = '<!doctype html><html><head></head><body> <h1> Solución </h1>';
-  pagina += '<div>'+ math.integral(req.body.Integral, 'x') +'</div';
+  pagina += '<div>'+ math.integral(req.body.Integral, 'x')  +'<b>+C</b></div';
   pagina += '</body></html>';
   res.send(pagina);
 
